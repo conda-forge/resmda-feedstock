@@ -1,13 +1,13 @@
 {% set name = "resmda" %}
-{% set version = "0.2.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/resmda-{{ version }}.tar.gz
-  sha256: dd8e53b63428470616b8ac456e8f8f85692f10cba080cf60dd058a486f8e35f7
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/resmda-{{ version }}.tar.gz
+  sha256: 2d2c60de07aec8f0ad25a76750f9ba0e65cf530f03143c140b01542de5e3c173
 
 build:
   noarch: python
