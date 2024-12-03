@@ -16,11 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.10
-    - setuptools-scm
     - pip
+    - python >=3.10
+    - setuptools
+    - setuptools-scm
   run:
     - python >=3.10
+    - numpy
     - scipy
     - scooby
 
