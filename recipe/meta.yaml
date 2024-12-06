@@ -1,14 +1,13 @@
 {% set name = "resmda" %}
-{% set version = "1.0.0" %}
-{% set python_min = "3.10" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/resmda-{{ version }}.tar.gz
-  sha256: 2d2c60de07aec8f0ad25a76750f9ba0e65cf530f03143c140b01542de5e3c173
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dageo-{{ version }}.tar.gz
+  sha256: 387ef40e74a4267034620cdc65cb04117c677e75cfec51cef23134f2187893fd
 
 build:
   noarch: python
@@ -29,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - resmda
+    - dageo
   commands:
     - pip check
   requires:
@@ -37,12 +36,12 @@ test:
     - pip
 
 about:
-  home: https://github.com/tuda-geo/resmda
-  summary: A simple 2D reservoir modeller plus ESMDA.
+  home: https://github.com/tuda-geo/dageo
+  summary: Data Assimilation in Geosciences.
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  doc_url: https://tuda-geo.github.io/resmda/
+  doc_url: https://tuda-geo.github.io/dageo/
 
 extra:
   recipe-maintainers:
