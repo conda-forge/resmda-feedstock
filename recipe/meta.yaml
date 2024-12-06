@@ -1,5 +1,5 @@
-{% set name = "resmda" %}
-{% set version = "1.0.3" %}
+{% set name = "dageo" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dageo-{{ version }}.tar.gz
-  sha256: 387ef40e74a4267034620cdc65cb04117c677e75cfec51cef23134f2187893fd
+  sha256: f6f4e8a513b540d39d311834f2265b1ff6e2e2737b1042cb4143f54f4dd0c890
 
 build:
   noarch: python
