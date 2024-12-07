@@ -1,5 +1,5 @@
 {% set name = "resmda" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/resmda-{{ version }}.tar.gz
-  sha256: 2d2c60de07aec8f0ad25a76750f9ba0e65cf530f03143c140b01542de5e3c173
+  sha256: ca1b543d75099084de0105d3b93e9ccd18b9024ab4e8b43c31f3c6974550a843
 
 build:
   noarch: python
